@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workshop 4: Practical JavaScript Coding</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="page-header">
+    <h1>Workshop 4</h1>
+    <p>Practical JavaScript coding: three exercises.</p>
+  </header>
+
+  <main class="exercise-grid">
+    <section class="exercise-card" aria-labelledby="calculator-title">
+      <p class="exercise-number">Exercise 1</p>
+      <h2 id="calculator-title">Calculator</h2>
+      <p>Choose an operation and enter two numbers.</p>
+      <form id="calculator-form">
+        <div class="field-row">
+          <label for="first-number">First number</label>
+          <input id="first-number" type="number" step="any" required>
+        </div>
+        <div class="field-row">
+          <label for="operation">Operation</label>
+          <select id="operation">
+            <option value="add">Addition (+)</option>
+            <option value="subtract">Subtraction (−)</option>
+            <option value="multiply">Multiplication (×)</option>
+            <option value="divide">Division (÷)</option>
+          </select>
+        </div>
+        <div class="field-row">
+          <label for="second-number">Second number</label>
+          <input id="second-number" type="number" step="any" required>
+        </div>
+        <button type="submit">Calculate</button>
+      </form>
+      <p id="calculator-result" class="result" aria-live="polite">Your result will appear here.</p>
+    </section>
+
+    <section class="exercise-card" aria-labelledby="even-odd-title">
+      <p class="exercise-number">Exercise 2</p>
+      <h2 id="even-odd-title">Even or Odd</h2>
+      <p>Check a number with the modulo (%) operator, then explore the numbers from 1 to 10.</p>
+      <form id="even-odd-form">
+        <div class="field-row">
+          <label for="even-odd-number">Enter a number</label>
+          <input id="even-odd-number" type="number" step="1" required>
+        </div>
+        <button type="submit">Check number</button>
+      </form>
+      <p id="even-odd-result" class="result" aria-live="polite">Your answer will appear here.</p>
+      <h3>Numbers from 1 to 10</h3>
+      <p id="loop-result" class="number-list" aria-live="polite"></p>
+    </section>
+
+    <section class="exercise-card" aria-labelledby="max-number-title">
+      <p class="exercise-number">Exercise 3</p>
+      <h2 id="max-number-title">Max Number</h2>
+      <p>Enter three numbers to find the largest value.</p>
+      <form id="max-number-form">
+        <div class="field-row">
+          <label for="max-first">First number</label>
+          <input id="max-first" type="number" step="any" required>
+        </div>
+        <div class="field-row">
+          <label for="max-second">Second number</label>
+          <input id="max-second" type="number" step="any" required>
+        </div>
+        <div class="field-row">
+          <label for="max-third">Third number</label>
+          <input id="max-third" type="number" step="any" required>
+        </div>
+        <button type="submit">Find largest</button>
+      </form>
+      <p id="max-number-result" class="result" aria-live="polite">The largest number will appear here.</p>
+    </section>
+  </main>
+
+  <footer>Workshop 4</footer>
+</body>
+</html>
